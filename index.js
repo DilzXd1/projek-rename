@@ -1867,7 +1867,7 @@ bot.start(async (ctx) => {
 
     // Mengirim pesan setelah delay 1 detik
     setTimeout(async () => {
-        await ctx.replyWithPhoto("https://files.catbox.moe/qrbpwz.mp4", {
+        await ctx.replyWithPhoto("https://files.catbox.moe/cpmdxe.mp4", {
             caption: mainMenuMessage,
             parse_mode: "Markdown",
             reply_markup: {
@@ -1923,7 +1923,7 @@ bot.action('developercmd', async (ctx) => {
         }]
     ];
 
-    await ctx.replyWithPhoto("https://files.catbox.moe/qrbpwz.mp4", {
+    await ctx.replyWithPhoto("https://files.catbox.moe/cpmdxe.mp4", {
         caption: mainMenuMessage,
         parse_mode: "Markdown",
         reply_markup: {
@@ -1966,7 +1966,7 @@ bot.action('adminmenu', async (ctx) => {
         }]
     ];
 
-    await ctx.replyWithPhoto("https://files.catbox.moe/qrbpwz.mp4", {
+    await ctx.replyWithPhoto("https://files.catbox.moe/cpmdxe.mp4", {
         caption: mainMenuMessage,
         parse_mode: "Markdown",
         reply_markup: {
@@ -2034,7 +2034,7 @@ bot.action('bugmenu', async (ctx) => {
 
     try {
         await ctx.deleteMessage();
-        await ctx.replyWithPhoto("https://files.catbox.moe/qrbpwz.mp4", {
+        await ctx.replyWithPhoto("https://files.catbox.moe/cpmdxe.mp4", {
             caption: mainMenuMessage,
             parse_mode: "Markdown",
             reply_markup: {
@@ -2073,7 +2073,7 @@ bot.action('android_guide', async (ctx) => {
         await ctx.deleteMessage();
 
         // Kirim pesan baru dengan gambar
-        await ctx.replyWithPhoto("https://files.catbox.moe/qrbpwz.mp4", {
+        await ctx.replyWithPhoto("https://files.catbox.moe/cpmdxe.mp4", {
             caption: guideMessage,
             parse_mode: "Markdown",
             reply_markup: {
@@ -2122,7 +2122,7 @@ bot.action('pesan', async (ctx) => {
         await ctx.deleteMessage();
 
         // Kirim pesan baru dengan gambar
-        await ctx.replyWithPhoto("https://files.catbox.moe/qrbpwz.mp4", {
+        await ctx.replyWithPhoto("https://files.catbox.moe/cpmdxe.mp4", {
             caption: guideMessage,
             parse_mode: "Markdown",
             reply_markup: {
@@ -2198,7 +2198,7 @@ bot.action('ownermenu', async (ctx) => {
 
     try {
         await ctx.deleteMessage();
-        await ctx.replyWithPhoto("https://files.catbox.moe/qrbpwz.mp4", {
+        await ctx.replyWithPhoto("https://files.catbox.moe/cpmdxe.mp4", {
             caption: mainMenuMessage,
             parse_mode: "Markdown",
             reply_markup: {
@@ -2268,7 +2268,7 @@ bot.action('main_menu', async (ctx) => {
     ];
 
     try {
-        await ctx.replyWithPhoto("https://files.catbox.moe/qrbpwz.mp4", {
+        await ctx.replyWithPhoto("https://files.catbox.moe/cpmdxe.mp4", {
             caption: mainMenuMessage,
             parse_mode: "Markdown",
             reply_markup: {
