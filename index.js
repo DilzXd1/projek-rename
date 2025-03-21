@@ -361,7 +361,7 @@ const checkPremium = async (ctx, next) => {
         await next();
     } else {
         const premiumMessage = `
- 『 𝐍𝐈𝐆𝐇𝐓𝐌𝐀𝐑𝐄 𝐕𝟐.𝟓 』
+ 『 𝐍𝐈𝐆𝐇𝐓𝐌𝐀𝐑𝐄 𝐕𝟑.𝟎』
  ╔══════════════════
  ║ ❌ ACCESS DENIED!
  ║ 💎 Status: NON-PREMIUM
@@ -388,7 +388,7 @@ const checkPremium = async (ctx, next) => {
 // Tambahan handler untuk premium info
 bot.action('premiuminfo', async (ctx) => {
     const infoMessage = `
- 『 𝐍𝐈𝐆𝐇𝐓𝐌𝐀𝐑𝐄 𝐕𝟐.𝟓 』
+ 『 𝐍𝐈𝐆𝐇𝐓𝐌𝐀𝐑𝐄 𝐕𝟑.𝟎』
  ╔══════════════════
  ║ 💎 PREMIUM FEATURES
  ║ • Unlimited Access
@@ -658,7 +658,7 @@ else
 (async () => {
     console.log(chalk.whiteBright.bold(`
 ╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮
-┃        SUKSES MEMUAT DATABASE OWNER          ┃
+┃        𝐒𝐔𝐂𝐂𝐄𝐒 𝐌𝐄𝐌𝐁𝐔𝐀𝐓 𝐃𝐀𝐓𝐀𝐁𝐀𝐒𝐄 𝐎𝐖𝐍𝐄𝐑       ┃
 ╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯`));
 
     loadPremiumUsers();
@@ -1423,7 +1423,7 @@ Total Pengguna: ${Object.keys(userActivity).length}
 // --- Contoh Command dan Middleware ---
 const prosesrespone = async (target, ctx) => {
     const processMessage = `
-『 𝐍𝐈𝐆𝐇𝐓𝐌𝐀𝐑𝐄 𝐕𝟐.𝟓 』
+『 𝐍𝐈𝐆𝐇𝐓𝐌𝐀𝐑𝐄 𝐕𝟑.𝟎』
 ╔══════════════════
 ║  TARGET: +${target.split('@')[0]}
 ║  STATUS: █▒▒▒▒▒▒▒▒▒ 15%
@@ -1438,7 +1438,7 @@ const prosesrespone = async (target, ctx) => {
 
 const donerespone = async (target, ctx) => {
     const successMessage = `
-『 𝐍𝐈𝐆𝐇𝐓𝐌𝐀𝐑𝐄 𝐕𝟐.𝟓 』
+『 𝐍𝐈𝐆𝐇𝐓𝐌𝐀𝐑𝐄 𝐕𝟑.𝟎』
 ╔══════════════════ 
 ║  TARGET: +${target.split('@')[0]}
 ║  STATUS: ██████████ 100%
@@ -1679,7 +1679,7 @@ bot.command("blackios", checkWhatsAppConnection, checkPremium, async ctx => {
 });
 
 // Command iosv1
-bot.command("nightfuck", checkWhatsAppConnection, checkPremium, async ctx => {
+bot.command("ziyfuck", checkWhatsAppConnection, checkPremium, async ctx => {
     const userId = ctx.from.id;
 
     // Cek cooldown
@@ -1705,7 +1705,7 @@ bot.command("nightfuck", checkWhatsAppConnection, checkPremium, async ctx => {
 ╭═══════『 𝐂𝐚𝐫𝐚 𝐏𝐚𝐤𝐞 』═══════⊱
  │
  ├─────『 𝐂𝐨𝐧𝐭𝐨𝐡 』
- │ •    /nightfuck 628xxx      < 1 - 20 >
+ │ •    /ziyfuck 628xxx      < 1 - 20 >
  │
  ├─────『 𝐏𝐞𝐧𝐭𝐢𝐧𝐠 』
  │ • Bisa pake 0/62/+62
@@ -1735,7 +1735,7 @@ bot.command("nightfuck", checkWhatsAppConnection, checkPremium, async ctx => {
 });
 
 // Command nusantarav2
-bot.command("nightv2", checkWhatsAppConnection, checkPremium, async ctx => {
+bot.command("ziytv2", checkWhatsAppConnection, checkPremium, async ctx => {
     const userId = ctx.from.id;
 
     // Cek cooldown
@@ -1761,7 +1761,7 @@ bot.command("nightv2", checkWhatsAppConnection, checkPremium, async ctx => {
 ╭═══════『 𝐂𝐚𝐫𝐚 𝐏𝐚𝐤𝐞 』═══════⊱
  │
  ├─────『 𝐂𝐨𝐧𝐭𝐨𝐡 』
- │ •   /nightv2 628xxx      < 1 - 20 >
+ │ •   /ziytv2 628xxx      < 1 - 20 >
  │
  ├─────『 𝐏𝐞𝐧𝐭𝐢𝐧𝐠 』
  │ • Bisa pake 0/62/+62
@@ -1791,7 +1791,7 @@ bot.command("nightv2", checkWhatsAppConnection, checkPremium, async ctx => {
     await donerespone(target, ctx);
 });
 
-bot.start(async (ctx) => {
+bot.ziy(async (ctx) => {
     // Mengirim status "mengetik"
     await ctx.telegram.sendChatAction(ctx.chat.id, 'typing');
 
@@ -1801,9 +1801,9 @@ bot.start(async (ctx) => {
     const isOwnerStatus = isOwner(ctx.from.id);
 
     const mainMenuMessage = `
-═╭══════『 𝐍𝐈𝐆𝐇𝐓𝐌𝐀𝐑𝐄 𝐕𝟐.𝟓 』═══════⊱
-┃ 𝐂𝐫𝐞𝐚𝐭𝐨𝐫: @Mrbonbons
-┃ 𝐕𝐞𝐫𝐬𝐢𝐨𝐧: 𝐕𝐞𝐫𝐬𝐢𝐨𝐧 𝐕𝟐 
+═╭══════『 𝐍𝐈𝐆𝐇𝐓𝐌𝐀𝐑𝐄 𝐕𝟑.𝟎 』═══════⊱
+┃ 𝐂𝐫𝐞𝐚𝐭𝐨𝐫: @ziyy102h
+┃ 𝐕𝐞𝐫𝐬𝐢𝐨𝐧: 𝐕𝐞𝐫𝐬𝐢𝐨𝐧 𝐕𝟑 
 ┃ 𝐀𝐝𝐦𝐢𝐧: ${isAdminStatus ? '✅' : '❌'}
 ┃ 𝐏𝐫𝐞𝐦𝐢𝐮𝐦: ${isPremium ? '✅' : '❌'}
 ┃ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥:
@@ -1818,9 +1818,9 @@ bot.start(async (ctx) => {
 
 ╭═══════『 𝐌𝐄𝐍𝐔 𝐁𝐔𝐆 𝐀𝐍𝐃𝐑𝐎𝐈𝐃』═══════⊱
 ┃ ═════════════════════════
-┃ ❯ 『   /nightbons 628xxxxxxx  』
+┃ ❯ 『   /hightziy 628xxxxxxx  』
 ┃ ═════════════════════════
-┃ ❯ 『   /nightv2 628xxxxxxx  』
+┃ ❯ 『   /ziytv2 628xxxxxxx  』
 ┃  ═════════════════════════
 ╰═════════════════════⊱
 
@@ -1828,23 +1828,23 @@ bot.start(async (ctx) => {
 ┃ ═════════════════════════
 ┃ ❯ 『   /blackios 628xxxxxxx  』
 ┃ ═════════════════════════
-┃ ❯ 『    /nightfuck 628xxxxxxx  』
+┃ ❯ 『    /ziyfuck 628xxxxxxx  』
 ┃  ═════════════════════════
 ╰═════════════════════⊱
 
 ╭═══════『 𝐒𝐭𝐚𝐭𝐮𝐬 』═══════⊱
 ┃ *COOMING SOON :* V3.0
-┃ *JOIN UPGRADE :* @Mrbonbons
+┃ *JOIN UPGRADE :* @ziyy102h
 ┃ *UPGRADE :* 2025 - 4 - 5
 ╰═════════════════════⊱
-   "𝐍𝐈𝐆𝐇𝐓𝐌𝐀𝐑𝐄 𝐕𝟐.𝟓"
-   *Developer :* @Mrbonbons
+   "𝐍𝐈𝐆𝐇𝐓𝐌𝐀𝐑𝐄 𝐕𝟑.𝟎"
+   *Developer :* @ziyy102h
 `;
 
     const mainKeyboard = [
         [{
-            text: "𝐍𝐈𝐆𝐇𝐓𝐌𝐀𝐑𝐄 𝐕𝟐.𝟓",
-            url: "https://t.me/Mrbonbons"
+            text: "𝐍𝐈𝐆𝐇𝐓𝐌𝐀𝐑𝐄 𝐕𝟑.𝟎",
+            url: "https://t.me/ziyy102h"
         }],
         [{
             text: "𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 𝐌𝐞𝐧𝐮",
@@ -1886,7 +1886,7 @@ bot.action('developercmd', async (ctx) => {
     }
 
     const mainMenuMessage = `
-╔════『 𝐍𝐈𝐆𝐇𝐓𝐌𝐀𝐑𝐄 𝐕𝟐.𝟓 』════⊳
+╔════『 𝐍𝐈𝐆𝐇𝐓𝐌𝐀𝐑𝐄 𝐕𝟑.𝟎』════⊳
 ║
 ╠══『 𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑 𝐂𝐎𝐍𝐒𝐎𝐋𝐄 』
 ║
@@ -1910,7 +1910,7 @@ bot.action('developercmd', async (ctx) => {
 ║ • Access: RESTRICTED ⚠️
 ║
 ╚═════════════════════⊳
-𝐍𝐈𝐆𝐇𝐓𝐌𝐀𝐑𝐄 𝐕𝟐.𝟓 | @Mrbonbons`;
+𝐍𝐈𝐆𝐇𝐓𝐌𝐀𝐑𝐄 𝐕𝟑.𝟎| @ziyy102h`;
 
     const mainKeyboard = [
         [{
@@ -1940,7 +1940,7 @@ bot.action('adminmenu', async (ctx) => {
     }
 
     const mainMenuMessage = `
-╔════『 𝐍𝐈𝐆𝐇𝐓𝐌𝐀𝐑𝐄 𝐕𝟐.𝟓 』════⊳
+╔════『 𝐍𝐈𝐆𝐇𝐓𝐌𝐀𝐑𝐄 𝐕𝟑.𝟎』════⊳
 ║
 ╠══『 𝐀𝐃𝐌𝐈𝐍 𝐂𝐎𝐍𝐓𝐑𝐎𝐋 』
 ║
@@ -1953,7 +1953,7 @@ bot.action('adminmenu', async (ctx) => {
 ║ • Commands: PREMIUM CONTROL
 ║
 ╚═════════════════════⊳
-𝐍𝐈𝐆𝐇𝐓𝐌𝐀𝐑𝐄 𝐕𝟐.𝟓 | @Mrbonbons`;
+𝐍𝐈𝐆𝐇𝐓𝐌𝐀𝐑𝐄 𝐕𝟑.𝟎| @ziyy102h`;
 
     const mainKeyboard = [
         [{
@@ -1981,14 +1981,14 @@ bot.action('bugmenu', async (ctx) => {
     const isOwnerStatus = isOwner(ctx.from.id);
 
     const mainMenuMessage = `
-  ╭═══════『 𝐍𝐈𝐆𝐇𝐓𝐌𝐀𝐑𝐄 𝐕𝟐.𝟓 』═══════⊱
+  ╭═══════『 𝐍𝐈𝐆𝐇𝐓𝐌𝐀𝐑𝐄 𝐕𝟑.𝟎』═══════⊱
   │
 
    ╭═══════『 𝐌𝐄𝐍𝐔 𝐁𝐔𝐆 𝐀𝐍𝐃𝐑𝐎𝐈𝐃』═══════⊱
    ┃ ═════════════════════════
-   ┃ ❯ 『   /nightbons 628xxxxxxx  』
+   ┃ ❯ 『   /hightziy 628xxxxxxx  』
    ┃ ═════════════════════════
-   ┃ ❯ 『   /nightv2 628xxxxxxx  』
+   ┃ ❯ 『   /ziytv2 628xxxxxxx  』
    ┃  ═════════════════════════
    ╰═════════════════════⊱
 
@@ -1998,19 +1998,19 @@ bot.action('bugmenu', async (ctx) => {
    ┃ ═════════════════════════
    ┃ ❯ 『   /blackios 628xxxxxxx  』
    ┃ ═════════════════════════
-   ┃ ❯ 『    /nightfuck 628xxxxxxx  』
+   ┃ ❯ 『    /ziyfuck 628xxxxxxx  』
    ┃  ═════════════════════════
    ╰═════════════════════⊱
   │
   ├─────『 𝐒𝐓𝐀𝐓𝐔𝐒 』
   │ • Premium: ${isPremium ? '✅ Active' : '❌ Not Active'}
   │ • Cooldown: ${bugCooldown} detik
-  │ • Version: 𝐍𝐈𝐆𝐇𝐓𝐌𝐀𝐑𝐄 𝐕𝟐.𝟓
+  │ • Version: 𝐍𝐈𝐆𝐇𝐓𝐌𝐀𝐑𝐄 𝐕𝟑.𝟎
   │
   │
   ╰═════════════════════⊱
   
-  *Devloper : @Mrbonbons*`;
+  *Devloper : @ziyy102h*`;
 
     const mainKeyboard = [
         [{
@@ -2156,7 +2156,7 @@ bot.action('ownermenu', async (ctx) => {
     const isOwnerStatus = isOwner(ctx.from.id);
 
     const mainMenuMessage = `
-  ╭═══════『  𝐍𝐈𝐆𝐇𝐓𝐌𝐀𝐑𝐄 𝐕𝟐.𝟓  』═══════⊱
+  ╭═══════『  𝐍𝐈𝐆𝐇𝐓𝐌𝐀𝐑𝐄 𝐕𝟑.𝟎 』═══════⊱
   │
   ├─────『 𝐎𝐖𝐍𝐄𝐑 』═══════════⊱
   │ • /addadmin 
@@ -2179,11 +2179,11 @@ bot.action('ownermenu', async (ctx) => {
   │
   ├─────『 𝐒𝐓𝐀𝐓𝐔𝐒 』
   │ • Mode: Active 
-  │ • Owner: @Mrbonbons
+  │ • Owner: @ziyy102h
   │
   ╰═════════════════════⊱
   
-  *Devloper : @Mrbonbons*`;
+  *Devloper : @ziyy102h*`;
 
     const mainKeyboard = [
         [{
@@ -2228,7 +2228,7 @@ bot.action('main_menu', async (ctx) => {
     const isOwnerStatus = isOwner(ctx.from.id);
 
     const mainMenuMessage = `
-╭═══════『 𝐍𝐈𝐆𝐇𝐓𝐌𝐀𝐑𝐄 𝐕𝟐.𝟓 』═══════⊱
+╭═══════『 𝐍𝐈𝐆𝐇𝐓𝐌𝐀𝐑𝐄 𝐕𝟑.𝟎 』═══════⊱
 │
 ├─────『 𝐌𝐚𝐢𝐧 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬 』
 │  *𝗦𝗧𝗔𝗧𝗨𝗦::* Active
@@ -2236,15 +2236,15 @@ bot.action('main_menu', async (ctx) => {
 │  *𝗔𝗱𝗺𝗶𝗻:* ${isAdminStatus ? '✅ Yes' : '❌ No'}
 │
 ├─────『 𝐀𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 』
-│   /nightbons 
-│   /nightv2 
+│   /hightziy
+│   /ziytv2 
 │   /blackios 
-│   /nightfuck 
+│   /ziyfuck 
 │
 ╰═════════════════════⊱
 
 
-*𝐍𝐈𝐆𝐇𝐓𝐌𝐀𝐑𝐄 𝐕𝟐.𝟓 | @Mrbonbons*
+*𝐍𝐈𝐆𝐇𝐓𝐌𝐀𝐑𝐄 𝐕𝟑.𝟎| @ziyy102h*
 `;
 
     const mainKeyboard = [
